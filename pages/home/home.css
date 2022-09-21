@@ -40,7 +40,7 @@
 }
 
 
-/*home-top*/
+/*------------ Top -------------*/
 
 .home-top {
   display: flex;
@@ -53,6 +53,10 @@
 .home-image {
   padding: 0 75px 0 75px;
   z-index: 1;
+}
+
+.home-top-left {
+  text-transform: uppercase !important;
 }
 
 .home-top-right hr {
@@ -85,6 +89,41 @@
   border-color: #f4e3b1;
 }
 
+/*----------- Middle -----------*/
+
+.squares {
+  display: flex;
+  margin-top: 12%;
+}
+
+.squares a {
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #575856;
+}
+
+.squares a:hover {
+  background-color: #f4e3b1;
+  color: #000;
+}
+
+.square-1,
+.square-2,
+.square-3 {
+  width: 320px;
+  height: 400px;
+  border: 5px solid #F4E3B1;
+  border-radius: 20px 0px;
+  font-style: normal;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  transition: all 0.5s ease-in-out;
+}
+
+
 /* ---------- Footer ----------*/
 
 footer {
@@ -103,7 +142,6 @@ footer a {
 
 .about {
   padding-top: 25px;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -161,8 +199,46 @@ footer a {
 */
 
 @media (min-width: 1200px) {
+  * {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
 
-  /*-----------------home-top---------------*/
+  #menu-h {
+    background-color: #e2a2b5;
+  }
+
+  #menu-h ul {
+    max-width: 570px;
+    list-style: none;
+    padding: 0;
+  }
+
+  #menu-h ul li {
+    display: inline;
+  }
+
+  #menu-h ul li a {
+    color: #494949;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background 0.4s;
+  }
+
+  #menu-h ul li a:hover {
+    color: #000;
+  }
+
+  #menu-h ul li:first-child a {
+    float: left;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  /*----------------- Top ---------------*/
 
   .home-top {
     display: flex;
@@ -194,7 +270,42 @@ footer a {
     position: relative;
   }
 
-  /*-------------------footer-------------------*/
+  /*----------- Middle -----------*/
+
+  .squares {
+    display: flex;
+    margin-top: 10%;
+  }
+
+  .squares a {
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: #575856;
+  }
+
+  .squares a:hover {
+    background-color: #f4e3b1;
+    color: #000;
+  }
+
+  .square-1,
+  .square-2,
+  .square-3 {
+    width: 320px;
+    height: 400px;
+    border: 5px solid #F4E3B1;
+    border-radius: 20px 0px;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.4em;
+    transition: all 0.5s ease-in-out;
+  }
+
+
+  /*------------------- Footer -------------------*/
 
   footer {
     position: absolute;
