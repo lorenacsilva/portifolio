@@ -69,7 +69,7 @@
 .home-top {
   display: flex;
   width: 100%;
-  height: 822px;
+  height: 821px;
   background-color: var(--color-donuts);
   padding-top: 100px;
 }
@@ -125,12 +125,12 @@
 
 .container-yellow {
   height: 85%;
-  width: 30%;
+  width: 35%;
   background-color: var(--color-sunshine);
   border-radius: 100px 100px 0px 0px;
   position: relative;
   margin-top: 108px;
-  right: 8%;
+  right: 5%;
   z-index: 0;
 }
 
